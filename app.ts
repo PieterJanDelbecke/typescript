@@ -1,11 +1,10 @@
-enum Role{ADMIN, READ_ONLY, AUTHOR}
-
-const person = {
+const person={
     name: 'Maximilian',
     age: 30,
-    role: Role.ADMIN
+    hobbies: ['sports', 'coding']
 }
 
-for (const [key, value] of Object.entries(person)){
-    console.log(`${key}: ${value}`)
+for (const hobby of person.hobbies){
+    console.log(hobby.toUpperCase())
 }
+
