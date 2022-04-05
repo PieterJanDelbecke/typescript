@@ -1,9 +1,21 @@
-var person = {
-    name: 'Maximilian',
-    age: 30,
-    hobbies: ['sports', 'coding']
-};
-for (var _i = 0, _a = person.hobbies; _i < _a.length; _i++) {
-    var hobby = _a[_i];
-    console.log(hobby.toUpperCase());
+function combine(input1, input2, resultConversion) {
+    var result;
+    if (typeof input1 === 'number' && typeof input2 === 'number') {
+        result = input1 + input2;
+    }
+    else {
+        result = input1.toString() + input2.toString();
+    }
+    if (resultConversion === 'as-number') {
+        return +result;
+    }
+    else {
+        return result.toString();
+    }
 }
+var combindeAges = combine(30, 26, 'as-number');
+console.log(combindeAges);
+var combineAgesString = combine('30', '26', 'as-number');
+console.log(combineAgesString);
+var combineNames = combine('max', 'anna', 'as-string');
+console.log(combineNames);
