@@ -9,3 +9,4 @@ let combineValues;
 combineValues = add;
 // combineValues = printResult;
 console.log(combineValues(8, 8));
+//# sourceMappingURL=functions.js.map

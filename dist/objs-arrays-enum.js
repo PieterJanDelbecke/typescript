@@ -7,3 +7,4 @@ const person = {
 for (const hobby of person.hobbies) {
     console.log(hobby.toUpperCase());
 }
+//# sourceMappingURL=objs-arrays-enum.js.map
