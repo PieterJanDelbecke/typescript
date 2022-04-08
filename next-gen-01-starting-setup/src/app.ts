@@ -1,9 +1,8 @@
-const add = (...numbers: number[]) => {
-  return numbers.reduce((curResult, curValue) => {
-    return curResult + curValue;
-  }, 0);
-};
+const person = {
+    firstName: 'Max',
+    age: 30
+}
 
-const addedNumbers = add(5, 10, 2, 3.7);
-
-console.log(addedNumbers)
+const {firstName, age} = person
+console.log(firstName)
+console.log(age)
